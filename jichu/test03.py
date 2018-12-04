@@ -70,3 +70,19 @@ def fi(n):
 print('-----------------------')
 sum = lambda arg1, arg2: arg1 + arg2
 print(sum(1, 2))
+
+# 模块
+import sys
+print('--------------')
+print("命令行参数如下:")
+for i in sys.argv:
+    print(i)
+print('\n python路径:',sys.path)
+
+#
+print('-------------------')
+import support
+support.print_func("Runoob")
+
+print(dir(support))
+# from ...import ...
